@@ -5,6 +5,7 @@ dotenv.config();
 
 
 export default defineConfig({
+    
     timeout: 90000,
     retries: 1,
     use: {
@@ -17,4 +18,5 @@ export default defineConfig({
             use: { browserName: 'chromium' },
         }
     ],
+    reporter: [['html', { open: 'never' }]],
 });
